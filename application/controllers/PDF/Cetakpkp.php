@@ -82,7 +82,7 @@ class Cetakpkp extends CI_Controller
             $pdf->Cell(305, 7, '', 0, 1, 'C');
         }
         foreach ($pkpcetak3 as $row) {
-            $pdf->SetFont('BookmanOldStyle-Bold', '', 12);
+            $pdf->SetFont('BookmanOldStyle-Bold', 'U', 12);
             $pdf->SetMargins(100.5, 25.4, 30.9);
             $pdf->Cell(10, 7, '', 0, 1, 'C');
             $pdf->Write(10, $row->nama_kd);

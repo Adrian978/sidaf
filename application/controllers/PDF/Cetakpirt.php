@@ -38,27 +38,27 @@ class Cetakpirt extends CI_Controller
             $pdf->SetFont('BookmanOldStyle', '', 12);
             $pdf->Write(10, 'Diberikan Kepada :');
             $pdf->Cell(5, 10, '', 0, 1);
-            $pdf->Write(10, '       Nama IRT              :  ');
+            $pdf->Write(10, '   Nama IRT              :  ');
             $pdf->Write(10, $row->irt);
             $pdf->Cell(10, 7, '', 0, 1);
-            $pdf->Write(10, '       Nama Pemilik /     :  ');
+            $pdf->Write(10, '   Nama Pemilik /     :  ');
             $pdf->Write(10, $row->nama);
             $pdf->Cell(10, 7, '', 0, 1);
-            $pdf->Write(10, '       Penanggungjawab');
+            $pdf->Write(10, '   Penanggungjawab');
             $pdf->Cell(10, 7, '', 0, 1);
-            $pdf->Write(10, '       Alamat                  :  ');
-            $pdf->SetMargins(83.5, 25.4, 30.9);
+            $pdf->Write(10, '   Alamat                  :  ');
+            $pdf->SetMargins(77.5, 25.4, 30.9);
             $pdf->Cell(5, 2, '', 0, 1);
             $pdf->Write(6, $row->alm_pr);
             $pdf->SetMargins(30.5, 82.5, 30.5);
             $pdf->Cell(10, 7, '', 0, 1);
-            $pdf->Write(10, '       Jenis Pangan        :  ');
+            $pdf->Write(10, '   Jenis Pangan        :  ');
             $pdf->Write(10, $row->produk);
             $pdf->Cell(10, 7, '', 0, 1);
-            $pdf->Write(10, '       Kemasan              :  ');
+            $pdf->Write(10, '   Kemasan              :  ');
             $pdf->Write(10, $row->kemasan);
             $pdf->Cell(10, 7, '', 0, 1);
-            $pdf->Write(10, '       Merk                     :  ');
+            $pdf->Write(10, '   Merk                     :  ');
             $pdf->Write(10, $row->merk);
             $pdf->Cell(10, 10, '', 0, 1);
         }
@@ -95,7 +95,7 @@ class Cetakpirt extends CI_Controller
             $pdf->Cell(305, 7, '', 0, 1, 'C');
         }
         foreach ($pirtcetak3 as $row) {
-            $pdf->SetFont('BookmanOldStyle-Bold', '', 12);
+            $pdf->SetFont('BookmanOldStyle-Bold', 'U', 12);
             $pdf->SetMargins(100.5, 25.4, 30.9);
             $pdf->Cell(10, 7, '', 0, 1, 'C');
             $pdf->Write(10, $row->nama_kd);
