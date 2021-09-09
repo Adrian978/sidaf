@@ -25,7 +25,7 @@
 
     <div class="col-md-12">
         <a href="<?php echo base_url('pemohon/tambah_pemohon'); ?>">
-            <button type="button" class="btn btn-primary">Tambah Pemohon</button>
+            <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah Pemohon</button>
         </a>
         <a href="<?php echo base_url() . 'download/download_pemohon' ?>" class="btn btn-warning"><i class="fas fa-file-download"></i> Download Format Import</a>
         <a href="<?= site_url('import/pemohonimport/create') ?>" class="btn btn-success"><i class="fas fa-file-upload"></i> Import</a><br><br>
@@ -42,7 +42,8 @@
                     <thead class="thead-dark">
                         <tr>
                             <th>No</th>
-                            <th>Nama</th>
+                            <th>Nama Pemilik</th>
+                            <th>Nama Penanggungjawab</th>
                             <th>NIK</th>
                             <th>No.Telepon</th>
                             <th>Alamat PKP</th>
@@ -65,6 +66,7 @@
                             <tr>
                                 <td><?php echo $no; ?></td>
                                 <td><?php echo $row['nama'] ?></td>
+                                <td><?php echo $row['nama_pj'] ?></td>
                                 <td><?php echo $row['nik'] ?></td>
                                 <td><?php echo $row['telp'] ?></td>
                                 <td><?php echo $row['alm_pkp'] ?></td>

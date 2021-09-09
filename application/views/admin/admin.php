@@ -25,7 +25,10 @@
 
     <div class="col-md-12">
         <a href="<?php echo base_url('admin/admin/tambah_user'); ?>">
-            <button type="button" class="btn btn-primary">Tambah Data</button> <br><br>
+            <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah Data</button>
+        </a>
+        <a href="https://www.md5online.org/md5-decrypt.html" target="_blank">
+            <button type="button" class="btn btn-success"><i class="fas fa-key"></i> Konversi Password</button> <br><br>
         </a>
     </div>
 

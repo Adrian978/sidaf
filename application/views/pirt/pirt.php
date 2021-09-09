@@ -25,7 +25,7 @@
 
     <div class="col-md-12">
         <a href="<?php echo base_url('pirt/pirt/tambah_pirt'); ?>">
-            <button type="button" class="btn btn-primary">Tambah PIRT</button>
+            <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah PIRT</button>
         </a>
         <a href="<?php echo base_url() . 'download/download_pirt' ?>" class="btn btn-warning"><i class="fas fa-file-download"></i> Download Format Import</a>
         <a href="<?= site_url('import/pirtimport/create') ?>" class="btn btn-success"><i class="fas fa-file-upload"></i> Import</a><br><br>

@@ -25,7 +25,7 @@
 
     <div class="col-md-12">
         <a href="<?php echo base_url('pirt/pkp/tambah_pkp'); ?>">
-            <button type="button" class="btn btn-primary">Tambah PKP</button>
+            <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah PKP</button>
         </a>
         <a href="<?php echo base_url() . 'download/download_pkp' ?>" class="btn btn-warning"><i class="fas fa-file-download"></i> Download Format Import</a>
         <a href="<?= site_url('import/pkpimport/create') ?>" class="btn btn-success"><i class="fas fa-file-upload"></i> Import</a><br><br>
@@ -43,7 +43,7 @@
                 <thead class="thead-dark">
                     <tr>
                         <th>No</th>
-                        <th>Nama</th>
+                        <th>Nama Penanggungjawab</th>
                         <th>NIK</th>
                         <th>Tanggal Penyuluhan</th>
                         <th>Tanggal Cetak</th>
@@ -61,7 +61,7 @@
                     ?>
                         <tr>
                             <td><?php echo $no; ?></td>
-                            <td><?php echo $row['nama'] ?></td>
+                            <td><?php echo $row['nama_pj'] ?></td>
                             <td><?php echo $row['nik'] ?></td>
                             <td><?php echo date_indo($row['tgl_penyuluhan']) ?></td>
                             <td><?php echo date_indo($row['tgl_cetak']) ?></td>

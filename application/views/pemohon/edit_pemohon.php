@@ -25,10 +25,19 @@
 
                     <div class="row form-group">
                         <div class="col col-md-3">
-                            <label for="text-input" class="form-control-label">Nama</label>
+                            <label for="text-input" class="form-control-label">Nama Pemilik</label>
                         </div>
                         <div class="col-12 col-md-9">
-                            <input type="text" id="text-input" name="nama" placeholder="Masukkan Nama" class="form-control" value="<?php echo $nama ?>">
+                            <input type="text" id="text-input" name="nama" placeholder="Masukkan Nama Pemilik" class="form-control" value="<?php echo $nama ?>">
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col col-md-3">
+                            <label for="text-input" class="form-control-label">Nama Penanggungjawab</label>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <input type="text" id="text-input" name="nama_pj" placeholder="Masukkan Nama Penanggungjawab" class="form-control" value="<?php echo $nama_pj ?>">
                         </div>
                     </div>
 

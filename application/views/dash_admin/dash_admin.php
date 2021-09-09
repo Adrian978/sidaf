@@ -34,6 +34,27 @@
         </div>
     </div>
 
+    <div class="row">
+
+        <!-- Earnings (Monthly) Card Example -->
+        <div class="col-xl-5 col-lg-7">
+            <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                Halaman Menu</div>
+                            <a href="<?php echo base_url('menu') ?>" target="_blank"> <img src="/sidaf/assets/images/menu.jpg" alt="Image" class="img-responsive" width="600"></a>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-desktop fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Content Row -->
 
 

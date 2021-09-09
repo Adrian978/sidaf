@@ -42,7 +42,7 @@ class Cetakpkp extends CI_Controller
             $pdf->Cell(5, 7, '', 0, 1);
             $pdf->Cell(5, 7, '', 0, 1);
             $pdf->Write(10, '       Nama     :  ');
-            $pdf->Write(10, $row->nama);
+            $pdf->Write(10, $row->nama_pj);
             $pdf->Cell(10, 7, '', 0, 1);
             $pdf->Write(10, '       Jabatan :  ');
             $pdf->Write(10, $row->jabatan);
@@ -85,10 +85,10 @@ class Cetakpkp extends CI_Controller
             $pdf->SetFont('BookmanOldStyle-Bold', 'U', 12);
             $pdf->SetMargins(100.5, 25.4, 30.9);
             $pdf->Cell(10, 7, '', 0, 1, 'C');
-            $pdf->Write(10, $row->nama_kd);
+            $pdf->Cell(80, 5, $row->nama_kd, 0, 1, 'C');
             $pdf->SetFont('BookmanOldStyle', '', 12);
             $pdf->SetMargins(110.5, 25.4, 30.9);
-            $pdf->Cell(10, 7, '', 0, 1, 'C');
+            $pdf->Cell(10, 2, '', 0, 1, 'C');
             $pdf->Write(10, 'NIP.  ');
             $pdf->Write(10, $row->nip);
             $pdf->Output();

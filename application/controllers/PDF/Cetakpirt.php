@@ -41,10 +41,8 @@ class Cetakpirt extends CI_Controller
             $pdf->Write(10, '   Nama IRT              :  ');
             $pdf->Write(10, $row->irt);
             $pdf->Cell(10, 7, '', 0, 1);
-            $pdf->Write(10, '   Nama Pemilik /     :  ');
+            $pdf->Write(10, '   Nama Pemilik        :  ');
             $pdf->Write(10, $row->nama);
-            $pdf->Cell(10, 7, '', 0, 1);
-            $pdf->Write(10, '   Penanggungjawab');
             $pdf->Cell(10, 7, '', 0, 1);
             $pdf->Write(10, '   Alamat                  :  ');
             $pdf->SetMargins(77.5, 25.4, 30.9);
@@ -53,7 +51,10 @@ class Cetakpirt extends CI_Controller
             $pdf->SetMargins(30.5, 82.5, 30.5);
             $pdf->Cell(10, 7, '', 0, 1);
             $pdf->Write(10, '   Jenis Pangan        :  ');
-            $pdf->Write(10, $row->produk);
+            $pdf->SetMargins(77.5, 25.4, 30.9);
+            $pdf->Cell(5, 2, '', 0, 1);
+            $pdf->Write(6, $row->produk);
+            $pdf->SetMargins(30.5, 82.5, 30.5);
             $pdf->Cell(10, 7, '', 0, 1);
             $pdf->Write(10, '   Kemasan              :  ');
             $pdf->Write(10, $row->kemasan);
@@ -98,10 +99,10 @@ class Cetakpirt extends CI_Controller
             $pdf->SetFont('BookmanOldStyle-Bold', 'U', 12);
             $pdf->SetMargins(100.5, 25.4, 30.9);
             $pdf->Cell(10, 7, '', 0, 1, 'C');
-            $pdf->Write(10, $row->nama_kd);
+            $pdf->Cell(80, 5, $row->nama_kd, 0, 1, 'C');
             $pdf->SetFont('BookmanOldStyle', '', 12);
             $pdf->SetMargins(110.5, 25.4, 30.9);
-            $pdf->Cell(10, 7, '', 0, 1, 'C');
+            $pdf->Cell(10, 2, '', 0, 1, 'C');
             $pdf->Write(10, 'NIP.  ');
             $pdf->Write(10, $row->nip);
             $pdf->Output();

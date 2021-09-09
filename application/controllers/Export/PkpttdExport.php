@@ -90,7 +90,7 @@ class PkpttdExport extends CI_Controller
     foreach ($pkpttd as $data) { // Lakukan looping pada variabel siswa
       $excel->setActiveSheetIndex(0)->setCellValue('A' . $numrow, $no);
       $excel->setActiveSheetIndex(0)->setCellValue('B' . $numrow, $data->berkas);
-      $excel->setActiveSheetIndex(0)->setCellValue('C' . $numrow, $data->nama);
+      $excel->setActiveSheetIndex(0)->setCellValue('C' . $numrow, $data->nama_pj);
       $excel->setActiveSheetIndex(0)->setCellValue('D' . $numrow, $data->alm_pkp);
       $excel->setActiveSheetIndex(0)->setCellValue('E' . $numrow, $data->sertifikat);
       $excel->setActiveSheetIndex(0)->setCellValue('F' . $numrow, $data->status);

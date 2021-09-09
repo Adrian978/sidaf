@@ -30,6 +30,7 @@ class Pemohon extends CI_Controller
     {
         $id_pemohon = '';
         $nama = $this->input->post('nama');
+        $nama_pj = $this->input->post('nama_pj');
         $nik = $this->input->post('nik');
         $telp = $this->input->post('telp');
         $alm_pkp = $this->input->post('alm_pkp');
@@ -56,6 +57,7 @@ class Pemohon extends CI_Controller
         $data = array(
             'id_pemohon' => $id_pemohon,
             'nama' => $nama,
+            'nama_pj' => $nama_pj,
             'nik' => $nik,
             'telp' => $telp,
             'alm_pkp' => $alm_pkp,
@@ -79,6 +81,7 @@ class Pemohon extends CI_Controller
         $data = array(
             'id_pemohon' => $row[0]['id_pemohon'],
             'nama' => $row[0]['nama'],
+            'nama_pj' => $row[0]['nama_pj'],
             'nik' => $row[0]['nik'],
             'telp' => $row[0]['telp'],
             'alm_pkp' => $row[0]['alm_pkp'],
@@ -114,6 +117,7 @@ class Pemohon extends CI_Controller
         $data = array(
             'id_pemohon' => $this->input->post('id_pemohon'),
             'nama' => $this->input->post('nama'),
+            'nama_pj' => $this->input->post('nama_pj'),
             'nik' => $this->input->post('nik'),
             'telp' => $this->input->post('telp'),
             'alm_pkp' => $this->input->post('alm_pkp'),

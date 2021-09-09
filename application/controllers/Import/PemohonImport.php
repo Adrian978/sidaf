@@ -38,16 +38,18 @@ class PemohonImport extends CI_Controller
 
                     $nik = $worksheet->getCellByColumnAndRow(0, $row)->getValue();
                     $nama = $worksheet->getCellByColumnAndRow(1, $row)->getValue();
-                    $telp = $worksheet->getCellByColumnAndRow(2, $row)->getValue();
-                    $alm_pkp = $worksheet->getCellByColumnAndRow(3, $row)->getValue();
-                    $alm_pr = $worksheet->getCellByColumnAndRow(4, $row)->getValue();
-                    $jenis_kelamin = $worksheet->getCellByColumnAndRow(5, $row)->getValue();
-                    $jabatan = $worksheet->getCellByColumnAndRow(6, $row)->getValue();
-                    $berkas = $worksheet->getCellByColumnAndRow(7, $row)->getValue();
+                    $nama_pj = $worksheet->getCellByColumnAndRow(2, $row)->getValue();
+                    $telp = $worksheet->getCellByColumnAndRow(3, $row)->getValue();
+                    $alm_pkp = $worksheet->getCellByColumnAndRow(4, $row)->getValue();
+                    $alm_pr = $worksheet->getCellByColumnAndRow(5, $row)->getValue();
+                    $jenis_kelamin = $worksheet->getCellByColumnAndRow(6, $row)->getValue();
+                    $jabatan = $worksheet->getCellByColumnAndRow(7, $row)->getValue();
+                    $berkas = $worksheet->getCellByColumnAndRow(8, $row)->getValue();
 
                     $data[] = array(
                         'nik' => $nik,
                         'nama' => $nama,
+                        'nama_pj' => $nama_pj,
                         'telp' => $telp,
                         'alm_pkp' => $alm_pkp,
                         'alm_pr' => $alm_pr,

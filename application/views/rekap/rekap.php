@@ -15,6 +15,7 @@
                         <tr>
                             <th>No</th>
                             <th>Nama</th>
+                            <th>Nama Penanggungjawab</th>
                             <th>Alamat Produksi</th>
                             <th>Alamat PKP</th>
                             <th>No.Telepon</th>
@@ -41,6 +42,7 @@
                             <tr>
                                 <td><?php echo $no; ?></td>
                                 <td><?php echo $row['nama'] ?></td>
+                                <td><?php echo $row['nama_pj'] ?></td>
                                 <td><?php echo $row['alm_pr'] ?></td>
                                 <td><?php echo $row['alm_pkp'] ?></td>
                                 <td><?php echo $row['telp'] ?></td>

@@ -34,7 +34,7 @@
             </div>
         </nav>
 
-        <header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="background-image: url(assets_login/images/img_bg_1.jpg)" data-stellar-background-ratio="0.5">
+        <header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="background-image: url(/sidaf/assets_login/images/img_bg_1.jpg)" data-stellar-background-ratio="0.5">
             <div class="overlay" id="particles2"></div>
             <div class="gtco-container">
                 <div class="row">

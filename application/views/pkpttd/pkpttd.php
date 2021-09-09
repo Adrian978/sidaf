@@ -29,7 +29,7 @@
                         ?>
                             <tr>
                                 <td><?php echo $no; ?></td>
-                                <td><?php echo $row['nama'] ?></td>
+                                <td><?php echo $row['nama_pj'] ?></td>
                                 <td>
                                     <center><img src="<?php echo $row['berkas'] ?>" width="75"></center>
                                 </td>

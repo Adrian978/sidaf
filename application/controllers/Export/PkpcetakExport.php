@@ -84,7 +84,7 @@ class PkpcetakExport extends CI_Controller
     foreach ($pkpcetak as $data) { // Lakukan looping pada variabel siswa
 
       $excel->setActiveSheetIndex(0)->setCellValue('A' . $numrow, $no);
-      $excel->setActiveSheetIndex(0)->setCellValue('B' . $numrow, $data->nama);
+      $excel->setActiveSheetIndex(0)->setCellValue('B' . $numrow, $data->nama_pj);
       $excel->setActiveSheetIndex(0)->setCellValue('C' . $numrow, $data->alm_pkp);
       $excel->setActiveSheetIndex(0)->setCellValue('D' . $numrow, date_indo($data->tgl_penyuluhan));
       $excel->setActiveSheetIndex(0)->setCellValue('E' . $numrow, date_indo($data->tgl_cetak));
