@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 07 Sep 2021 pada 01.55
+-- Waktu pembuatan: 09 Sep 2021 pada 18.35
 -- Versi server: 10.4.19-MariaDB
 -- Versi PHP: 7.3.28
 
@@ -71,7 +71,7 @@ CREATE TABLE `kepala_dinas` (
 --
 
 INSERT INTO `kepala_dinas` (`id_kd`, `nama_kd`, `nip`) VALUES
-(1, 'dr. Mochamad  Abdul  Hakam, Sp.PD', '19791114 200501 1 009');
+(1, 'dr. Mochamad Abdul Hakam, Sp.PD', '19791114 200501 1 009');
 
 -- --------------------------------------------------------
 
@@ -150,6 +150,7 @@ CREATE TABLE `pemohon` (
   `id_pemohon` int(11) NOT NULL,
   `nik` varchar(16) NOT NULL,
   `nama` varchar(256) NOT NULL,
+  `nama_pj` varchar(256) NOT NULL,
   `telp` varchar(50) NOT NULL,
   `jenis_kelamin` varchar(20) NOT NULL,
   `jabatan` varchar(100) NOT NULL,
@@ -162,18 +163,18 @@ CREATE TABLE `pemohon` (
 -- Dumping data untuk tabel `pemohon`
 --
 
-INSERT INTO `pemohon` (`id_pemohon`, `nik`, `nama`, `telp`, `jenis_kelamin`, `jabatan`, `alm_pkp`, `alm_pr`, `berkas`) VALUES
-(1, '1', 'RONNY WIJAYA', '085640415051', 'L', 'Penanggung Jawab IRT', 'Dewi Sartika Barat VIII No 51 RT 03 RW 02 Kelurahan Sukorejo Kecamatan Gunung Pati Semarang', 'Dewi Sartika Barat VIII No 51 RT 03 RW 02 Kelurahan Sukorejo Kecamatan Gunung Pati Semarang', 'gambar/image001.png'),
-(2, '2', 'RA NUR AMALINA', '081225925292', 'P', 'Penanggung Jawab IRT', 'Jl. Kp. Kulitan No. 198 RT 03 RW 07 Kelurahan Jagalan Kec. Semarang Tengah', 'Jl. Kp. Kulitan No. 198 RT 03 RW 07 Kelurahan Jagalan Kec. Semarang Tengah', 'gambar/image003.png'),
-(3, '3', 'GIYANTO', '085647465162', 'L', '', 'Jalan Borobudur RT 10 RW 12 Kembang Arum Semarang Barat ', 'Jalan Borobudur RT 10 RW 12 Kembang Arum Semarang Barat ', 'gambar/default.png'),
-(4, '4', 'MURNIATI', '08892416289 / 085641196699', 'P', '', 'Jl. Tanjung Sari 1 No.1 RT 03 RW 14 Pedurungan Tengah, Pedurungan  Semarang', 'Jl. Tanjung Sari 1 No.1 RT 03 RW 14 Pedurungan Tengah, Pedurungan  Semarang', 'gambar/default.png'),
-(5, '5', 'VERA OLIVIA DANEA', '081325718758', 'P', '', 'Perumahan Permata Puri Jl. Watu Wila IV Blok D IX No. 25 RT 005 RW 10 Kel. Bringin Kec. Ngaliyan Semarang', 'Jalan Kalipepe III No. 17 RT 17 RW 01 Kel. Pudak Payung Kec. Banyumanik Semarang', 'gambar/default.png'),
-(6, '6', 'PUJI HANJARWATI', '08122518362', 'P', '', 'Jl. Kruing Brt Dlm l No 98 RT 01 RW 03 Srondol Wetan Banyumanik Semarang ', 'Jl. Kruing Brt Dlm l No 98 RT 01 RW 03 Srondol Wetan Banyumanik Semarang ', 'gambar/default.png'),
-(7, '7', 'AGUSTINE ANGELINA', '081228122633', 'P', '', 'Aryamuti Barat V / 26 RT 07 RW 03 Kel. Pedurungan Lor Kec. Pedurungan Semarang', 'Jl. Cilosari 567 RT 01 RW 02 Bugangan Semarang Timur ', 'gambar/default.png'),
-(8, '8', 'SRI WIDIASTUTI', '0895360442731', 'P', '', 'Sendangguwo Arjuna RT 01 RW 10, Sendangguwo, Tembalang, Semarang', 'Sendangguwo Arjuna RT 01 RW 10, Sendangguwo, Tembalang, Semarang', 'gambar/default.png'),
-(9, '9', 'LIESTIJANI', '081575082062', 'P', '', 'Jl Durian II No. 19 RT 05 RW 01 Kelurahan Lamper Kidul Kecamatan Semarang Selatan', 'Jl Durian II No. 19 RT 05 RW 01 Kelurahan Lamper Kidul Kecamatan Semarang Selatan', 'gambar/default.png'),
-(10, '10', 'GILANG KRESNA MALIK', '087847518792', 'L', '', 'Villa Mulawarman Kav.16 RT 07 RW 02 Kelurahan Jabungan, Kecamatan Banyumanik Semarang', 'Villa Mulawarman Kav.16 RT 07 RW 02 Kelurahan Jabungan, Kecamatan Banyumanik Semarang', 'gambar/default.png'),
-(16, '123123123123', 'Tes', '081081081081', 'L', '', 'yahoo', 'yahaha', 'gambar/');
+INSERT INTO `pemohon` (`id_pemohon`, `nik`, `nama`, `nama_pj`, `telp`, `jenis_kelamin`, `jabatan`, `alm_pkp`, `alm_pr`, `berkas`) VALUES
+(1, '1', 'RONNY WIJAYA', '', '085640415051', 'L', 'Penanggung Jawab IRT', 'Dewi Sartika Barat VIII No 51 RT 03 RW 02 Kelurahan Sukorejo Kecamatan Gunung Pati Semarang', 'Dewi Sartika Barat VIII No 51 RT 03 RW 02 Kelurahan Sukorejo Kecamatan Gunung Pati Semarang', 'gambar/image001.png'),
+(2, '2', 'RA NUR AMALINA', '', '081225925292', 'P', 'Penanggung Jawab IRT', 'Jl. Kp. Kulitan No. 198 RT 03 RW 07 Kelurahan Jagalan Kec. Semarang Tengah', 'Jl. Kp. Kulitan No. 198 RT 03 RW 07 Kelurahan Jagalan Kec. Semarang Tengah', 'gambar/image003.png'),
+(3, '3', 'GIYANTO', '', '085647465162', 'L', '', 'Jalan Borobudur RT 10 RW 12 Kembang Arum Semarang Barat ', 'Jalan Borobudur RT 10 RW 12 Kembang Arum Semarang Barat ', 'gambar/default.png'),
+(4, '4', 'MURNIATI', '', '08892416289 / 085641196699', 'P', '', 'Jl. Tanjung Sari 1 No.1 RT 03 RW 14 Pedurungan Tengah, Pedurungan  Semarang', 'Jl. Tanjung Sari 1 No.1 RT 03 RW 14 Pedurungan Tengah, Pedurungan  Semarang', 'gambar/default.png'),
+(5, '5', 'VERA OLIVIA DANEA', '', '081325718758', 'P', '', 'Perumahan Permata Puri Jl. Watu Wila IV Blok D IX No. 25 RT 005 RW 10 Kel. Bringin Kec. Ngaliyan Semarang', 'Jalan Kalipepe III No. 17 RT 17 RW 01 Kel. Pudak Payung Kec. Banyumanik Semarang', 'gambar/default.png'),
+(6, '6', 'PUJI HANJARWATI', '', '08122518362', 'P', '', 'Jl. Kruing Brt Dlm l No 98 RT 01 RW 03 Srondol Wetan Banyumanik Semarang ', 'Jl. Kruing Brt Dlm l No 98 RT 01 RW 03 Srondol Wetan Banyumanik Semarang ', 'gambar/default.png'),
+(7, '7', 'AGUSTINE ANGELINA', '', '081228122633', 'P', '', 'Aryamuti Barat V / 26 RT 07 RW 03 Kel. Pedurungan Lor Kec. Pedurungan Semarang', 'Jl. Cilosari 567 RT 01 RW 02 Bugangan Semarang Timur ', 'gambar/default.png'),
+(8, '8', 'SRI WIDIASTUTI', '', '0895360442731', 'P', '', 'Sendangguwo Arjuna RT 01 RW 10, Sendangguwo, Tembalang, Semarang', 'Sendangguwo Arjuna RT 01 RW 10, Sendangguwo, Tembalang, Semarang', 'gambar/default.png'),
+(9, '9', 'LIESTIJANI', '', '081575082062', 'P', '', 'Jl Durian II No. 19 RT 05 RW 01 Kelurahan Lamper Kidul Kecamatan Semarang Selatan', 'Jl Durian II No. 19 RT 05 RW 01 Kelurahan Lamper Kidul Kecamatan Semarang Selatan', 'gambar/default.png'),
+(10, '10', 'GILANG KRESNA MALIK', '', '087847518792', 'L', '', 'Villa Mulawarman Kav.16 RT 07 RW 02 Kelurahan Jabungan, Kecamatan Banyumanik Semarang', 'Villa Mulawarman Kav.16 RT 07 RW 02 Kelurahan Jabungan, Kecamatan Banyumanik Semarang', 'gambar/default.png'),
+(16, '123123123123', 'Tes', '', '081081081081', 'L', '', 'yahoo', 'yahaha', 'gambar/');
 
 -- --------------------------------------------------------
 
@@ -213,7 +214,7 @@ INSERT INTO `pirt` (`id_pirt`, `kode`, `nik`, `produk`, `kemasan`, `merk`, `pirt
 (11, '11', '9', 'Kacang Bawang', 'Toples Plastik', 'BL.OK', '2153374020009-26', '2021-01-26', '2026-01-26', ' -', '', ''),
 (12, '12', '9', 'Telur Asin', 'Plastik Mika', 'BL.OK', '2033374030009-26', '2021-01-26', '2026-01-26', '  -', '', ''),
 (13, '13', '10', 'Keripik Jagung', 'Aluminium Foil', 'CORN ELLIS', '5153374010010-26', '2021-01-26', '2026-01-26', ' -', '', ''),
-(19, '1', '1', 'Serbuk Jahe', 'Aluminium Foil', 'BOS JAE NDA', '2133374010001-26', '2021-08-20', '2026-01-26', ' -', '-', ' -');
+(19, '1', '1', 'Sambal Cumi, Sambal Cakalang, Sambal Teri, Sambal Bawang, Sambal Kriuk', 'Aluminium Foil', 'BOS JAE NDA', '2133374010001-26', '2021-08-20', '2026-01-26', ' -', '-', ' -');
 
 -- --------------------------------------------------------
 
