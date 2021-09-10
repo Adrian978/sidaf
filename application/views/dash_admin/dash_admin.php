@@ -44,7 +44,7 @@
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                 Halaman Menu</div>
-                            <a href="<?php echo base_url('menu') ?>" target="_blank"> <img src="/sidaf/assets/images/menu.jpg" alt="Image" class="img-responsive" width="600"></a>
+                            <a href="<?php echo base_url('menu') ?>" target="_blank"> <img src="/sidaf/assets/images/menu.jpg" width="400" height="200"></a>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-desktop fa-2x text-gray-300"></i>
